@@ -18,7 +18,7 @@
 
                             <h3 class="text-center">You don't Have any tasks yet, try to add a new one now ..</h3>
 
-                            <a href="/todo/create" class="btn btn-primary add-todo-task">ADD TODO TASK</a>
+                            <a href="/todo-mirror/create" class="btn btn-primary add-todo-task">ADD TODO TASK</a>
 
                         </div>
 
