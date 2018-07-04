@@ -1,0 +1,40 @@
+.settings
+{
+    display: inline-flex !important;
+}
+
+.btn-danger
+{
+    background-color: #ef6733;
+    border-color: #ef6733;
+    margin-left: 5px;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.btn-danger:hover
+{
+    background-color: #e25119;
+    border-color: #e25119;
+}
+
+.btn-primary
+{
+    background-color: #00b1b3;
+    border-color: #00b1b3;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+.btn-primary:hover
+{
+    background-color: #02a5a7;
+    border-color: #02a5a7;
+}
+
+.add-todo-task
+{
+    margin-top: 15px;
+    height: 45px;
+    line-height: 30px;
+}
