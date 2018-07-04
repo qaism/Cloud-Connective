@@ -37,6 +37,11 @@ class TodoMirrorController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
         $task = new Todo();
 
         $task->name = $request->name;
@@ -81,6 +86,11 @@ class TodoMirrorController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request,[
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
         $todo_mirror = TodoMirror::find($id);
 
         $todo_mirror->name = $request->name;

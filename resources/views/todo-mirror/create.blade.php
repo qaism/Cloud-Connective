@@ -24,19 +24,25 @@
 
                             <div class="form-group">
 
-                                <input type="text" name="name" class="form-control" placeholder="Enter the name of the task..">
+                                <input type="text" name="name" class="form-control" placeholder="Enter the name of the task.." required>
 
                             </div>
 
                             <div class="form-group">
 
-                                <textarea name="description" rows="3" class="form-control" placeholder="Enter the description of the task.."></textarea>
+                                <textarea name="description" rows="3" class="form-control" placeholder="Enter the description of the task.." required></textarea>
 
                             </div>
 
                             <div class="form-group">
 
                                 <button class="btn btn-primary" type="submit">Submit</button>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                @include('layouts.errors')
 
                             </div>
 

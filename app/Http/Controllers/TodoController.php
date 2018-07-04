@@ -37,6 +37,11 @@ class TodoController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request,[
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
         $task = new Todo();
 
         $task->name = $request->name;
@@ -80,6 +85,11 @@ class TodoController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request,[
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
         $task = Todo::find($id);
 
         $task->name = $request->name;
